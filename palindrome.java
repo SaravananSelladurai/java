@@ -9,8 +9,16 @@ public class palindrome{
     System.out.println("The string is : "+str);
     StringBuilder temp = new StringBuilder(str);
     temp.reverse();
-    System.out.println("The reversed string is : "+temp.toString());""
-    System.out.println("This is the process ");
+    String rev_str = temp.toString();
+    System.out.println("The reversed string is : "+rev_str);
+    if(rev_str.equals(str)){
+      System.out.println("The string is palindrome ");
+    }
+    else {
+      System.out.println("The string is not a palindrome");
+    }
+
+    
   }
 }
   
